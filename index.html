@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanilla JavaScript Calculator</title>
+  </head>
+  <body>
+    <!-- background animation here -->
+    <canvas id="canv" width="32" height="32"></canvas>
+    <!-- calculator wrapper -->
+    <div class="calculator">
+      <!-- display of calculator -->
+      <div class="display">
+        <div class="previousNumber">
+          <!-- numbers and sign in display -->
+          <p></p>
+          <span class="mathSign"></span>
+        </div>
+        <p class="currentNumber"></p>
+      </div>
+      <!-- whole calculator panel -->
+      <div class="panel">
+        <button class="clear">C</button>
+        <button class="operator">2^</button>
+        <button class="operator">:</button>
+        <button class="operator">x</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">-</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">+</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="equals">=</button>
+        <button class="number">0</button>
+        <button class="number">00</button>
+        <button class="number">.</button>
+      </div>
+    </div>
+    <!-- calculator's history -->
+    <div data-simplebar class="calculator-history">
+      <p class="history-title">
+        Last Calculations
+        <button class="history-btn">Clear History</button>
+      </p>
+      <hr />
+      <ul class="history"></ul>
+    </div>
+    <!-- importing javascript scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="/main.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>
