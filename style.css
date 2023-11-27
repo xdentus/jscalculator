@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 *,
@@ -57,7 +57,8 @@ canvas {
 }
 
 .previousNumber {
-  color: rgb(182, 182, 182);
+  /* color: rgb(182, 182, 182); */
+  color: slategray;
   font-size: 20px;
 }
 
